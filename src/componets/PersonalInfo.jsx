@@ -43,7 +43,7 @@ const PersonalInfo = () => {
 
   // Validate mobile number format (e.g., Indian mobile number)
   const validateMobile = (mobile) => {
-    const regex = /^\+91[0-9]{10}$/; // Matches +91 followed by 10 digits
+    const regex = /^\[0-9]{10}$/; // Matches +91 followed by 10 digits
     return regex.test(mobile);
   };
 
@@ -71,7 +71,7 @@ const PersonalInfo = () => {
 
     // Mobile validation
     if (!validateMobile(personalDetails.mobile)) {
-      setMobileError('Mobile number must be in +91XXXXXXXXXX format');
+      setMobileError('Mobile number must be in XXXXXXXXXX format');
       isValid = false;
     } else {
       setMobileError('');
@@ -127,7 +127,7 @@ const PersonalInfo = () => {
             onChange={(e) =>
               dispatch(setPersonalInfo({ key: 'lastName', value: e.target.value }))
             }
-            placeholder="Prakash Mani"
+            placeholder="Mani"
             className="mt-1 w-full px-3 py-2 border border-gray-300 rounded"
           />
         </div>
@@ -145,7 +145,7 @@ const PersonalInfo = () => {
                 setEmailError('');
               }
             }}
-            placeholder="arjun.prakash@gmail.com"
+            placeholder="arjun.mani@gmail.com"
             className="mt-1 w-full px-3 py-2 border border-gray-300 rounded"
           />
           {emailError && <span className="text-red-500 text-sm">{emailError}</span>}
@@ -159,12 +159,12 @@ const PersonalInfo = () => {
               dispatch(setPersonalInfo({ key: 'mobile', value: e.target.value }));
               // Validate mobile on change
               if (!validateMobile(e.target.value)) {
-                setMobileError('Mobile number must be in +91XXXXXXXXXX format');
+                setMobileError('Mobile number must be in XXXXXXXXXX format');
               } else {
                 setMobileError('');
               }
             }}
-            placeholder="+91 8189966699"
+            placeholder="8189966699"
             className="mt-1 w-full px-3 py-2 border border-gray-300 rounded"
           />
           {mobileError && <span className="text-red-500 text-sm">{mobileError}</span>}

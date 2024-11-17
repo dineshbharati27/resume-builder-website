@@ -48,7 +48,7 @@ const WorkExperience = () => {
     // Check for empty fields
     experience.forEach((exp, index) => {
       if (!exp.jobTitle || !exp.organizationName || !exp.startYear || !exp.endYear) {
-        setEmptyFieldsError('All fields must be filled out for each experience.');
+        setEmptyFieldsError('All fields must be filled out.');
         isValid = false;
       }
     });

@@ -40,7 +40,7 @@ const Skills = () => {
 
     skills.forEach((skill,index) => {
       if(!skill.skills){
-        setEmptyFieldsError("All fields must be filled out for each experience.");
+        setEmptyFieldsError("All fields must be filled out.");
         isValid = false;
       }
     });
