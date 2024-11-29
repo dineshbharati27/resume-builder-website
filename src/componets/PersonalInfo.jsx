@@ -43,7 +43,7 @@ const PersonalInfo = () => {
 
   // Validate mobile number format (e.g., Indian mobile number)
   const validateMobile = (mobile) => {
-    const regex = /^\[0-9]{10}$/; // Matches +91 followed by 10 digits
+    const regex = /[0-9]{10}$/; // Matches +91 followed by 10 digits
     return regex.test(mobile);
   };
 
