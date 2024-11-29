@@ -14,23 +14,22 @@ const About = () => {
 
 
       <div className="my-10 flex flex-col md:flex-row gap-16">
-        <img src={assets.illustration} className='w-full md:max-w-[450px] h-auto' alt="about" />
+        <img src={assets.illustration} className='w-full md:max-w-[400px] h-auto' alt="about" />
         <div className="flex flex-col justify-center gap-6 md:w-2/4">
           <div>
             <h3 className="text-2xl font-semibold mb-2">What We Offer</h3>
             <ul className="text-md list-disc list-inside text-gray-800">
-              <li><strong>Choose from a variety of professionally designed templates</strong> – Select the resume style that fits your profession and personality.</li>
-              <li><strong>Personalize with ease</strong> – Fill in essential details like personal information, work experience, education, skills, and more.</li>
-              <li><strong>Instantly download your resume</strong> – Once completed, get your resume in a polished format with just one click.</li>
+              <li><strong>Explore a wide range of expertly crafted resume templates</strong> – Choose a design that aligns with your career and showcases your personality.</li>
+              <li><strong>Effortlessly customize your resume</strong> – Add key details such as personal information, work experience, education, skills, and more with ease.</li>
+              <li><strong>Download your professional resume instantly</strong> – Complete your resume and download it in a polished format with a single click.</li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-2xl font-semibold mb-2">Our Mission</h3>
             <p className="text-md text-gray-800 mb-2">
-              Our goal is to help you create a resume that captures your unique qualifications and lands you that dream job. 
-              Whether you're a seasoned professional or just starting your career, Resume Builder simplifies the process, 
-              offering clean, well-structured templates that make an impact.
+            We aim to empower you to craft a resume that highlights your unique skills and achievements, paving the way to your dream job. 
+            Whether you're an experienced professional or embarking on your career journey, Resume Builder streamlines the process with elegant, well-organized templates designed to leave a lasting impression.
             </p>
           </div>
         </div>
