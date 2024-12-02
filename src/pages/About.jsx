@@ -7,7 +7,7 @@ const About = () => {
     <div className="max-w-4xl mx-auto px-4 py-12">
       <h2 className="text-3xl font-bold text-center mb-6">About Us</h2>
       <p className="text-lg text-gray-800 mb-6">
-        Welcome to <strong>Resume Builder</strong>, your go-to platform for creating professional resumes with ease. 
+        Welcome to <strong>CV-GENIE</strong>, your go-to platform for creating professional resumes with ease. 
         We understand that building a standout resume can be overwhelming, which is why we’ve designed a tool that 
         streamlines the process for you.
       </p>
